@@ -72,7 +72,7 @@ body {
 .hero-content h1 {
     font-size: 10vh;
     font-weight: bold;
-    padding-left: 7vh;
+    padding-left: 10vh;
 }
 
 .hero-content span {
@@ -548,8 +548,120 @@ sup {
     }
 }
 
+@media (min-width: 1200px) {
+    .carousel-controls {
+        display: none;
+    }
+}
 
-@media screen and (max-width: 780px)  {
+@media (max-width: 1200px){
+    .hero {
+        flex-direction: column;
+        padding: 30px 10px;
+        text-align: center;
+    }
+    .hero-content h1 {
+        font-size: 7vh;
+        padding-left: 0;
+    }
+    .hero-content span {
+        font-size: 40px;
+    }
+    .item {
+        font-size: 14px;
+        margin-top: 15px;
+    }
+    .hero-image img {
+        max-width: 70%;
+        height: 90vh;
+    }
+    .bright h2 {
+        font-size: 6vh;
+    }
+    .features {
+        flex-direction: column;
+        margin-top: 30px;
+        gap: 30px;
+    }
+    .feature-item {
+        width: 100%;
+        text-align: center;
+    }
+    .feature-item img {
+        width: 120px;
+        margin-bottom: 10px;
+    }
+    .company {
+        padding: 30px;
+        align-items: center;
+        justify-content: center;
+    }
+    .company h1 {
+        font-size: 18px;
+    }
+    .logos {
+        display: block;
+    }
+    .logos img {
+        height: 25px;
+    }
+    .payoff-card h1 {
+        font-size: 36px;
+    }
+    .step {
+        margin-bottom: 10px;
+    }
+    .step-content a{
+        margin-bottom: 60px;
+    }
+    .step-content {
+        text-align: left;
+    }
+    .step-number {
+        font-size: 30px;
+    }
+    .apply-now {
+        font-size: 16px;
+    }
+    .review {
+        flex: none;
+    } 
+    .review-container {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 24px;
+    }
+    .crushdebt{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .crushdebt .text-section {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 5px;
+        margin-top: 20px;
+    }
+    .crushdebt .text-section p {
+        font-size: 20px;
+        line-height: 1.5;
+    }
+    .crushdebt .image-section img {
+        max-width: 100%;
+        height: auto;
+    }
+    .footer-content .footer-text {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+    .footer-content .disclaimer {
+        font-size: 10px;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 640px)  {
     .socials .spantext{
         display: none;
     }
@@ -560,12 +672,12 @@ sup {
     }
 
     .hero-content h1 {
-        font-size: 6vh;
+        font-size: 5vh;
         padding-left: 0;
     }
 
     .hero-content span {
-        font-size: 40px;
+        font-size: 30px;
     }
 
     .checklist {
@@ -584,39 +696,32 @@ sup {
     .bright h2 {
         font-size: 5vh;
     }
-
     .features {
         flex-direction: column;
         margin-top: 30px;
         gap: 30px;
     }
-
     .feature-item {
         width: 100%;
         text-align: center;
     }
-
     .feature-item img {
         width: 120px;
         margin-bottom: 10px;
     }
-
     .company {
         padding: 20px 0;
         flex-direction: row;
         align-items: flex-start;
     }
-
     .company h1 {
         font-size: 10px;
     }
-
     .logos {
         display: block;
     }
-
     .logos img {
-        height: 20px;
+        height: 16px;
     }
     .payoff-card h1 {
         font-size: 36px;
@@ -639,34 +744,26 @@ sup {
         max-width: 70%;
         margin-left: 60px;
     }
-
     .step-content {
         text-align: left;
     }
-
+    .step-content h2{
+        font-size: 30px;
+    }
     .step-number {
         font-size: 30px;
     }
-
     .apply-now {
         font-size: 16px;
     }
-
     .review {
-      flex: 0 0 100%;
-    }
-
-    .rating-review h2,
-    .faq h2 {
-      font-size: 36px;
-    }
-
-    .review-container{
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        gap: 24px;
-    }
-
+        flex: 0 0 100%;
+      }
+    
+      .rating-review h2,
+      .faq h2 {
+        font-size: 36px;
+      }
     .crushdebt{
         display: flex;
         flex-direction: column;
@@ -701,4 +798,3 @@ sup {
         margin-top: 20px;
     }
 }
-    
