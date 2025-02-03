@@ -14,7 +14,7 @@ body {
 }
 
 .home-page{
-    background: linear-gradient(100deg,#E3F1E7, #FEEFC7);
+    background: linear-gradient(100deg,#E3F1E7 100%, #FEEFC7 100%);
     height: 100vh;
 }
 
@@ -469,33 +469,52 @@ sup {
 }
 
 .crushdebt {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(to right, #E6F4EA, #C5E1C5);
+  width: 100%;
+  min-height: 400px;
+  background: linear-gradient(135deg, #E5F1E3 100%, #BAE8CB 100%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 80px;
+  overflow: hidden;
+}
+
+.text-section{
+  flex: 1;
+  max-width: 600px;
 }
 
 .text-section h1 {
-    font-size: 3rem;
-    font-weight: bold;
-    color: #000;
-    margin-left: 280px;
+  font-size: 64px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 16px;
+  line-height: 1.1;
+}
+
+.text-section h1 sup {
+  font-size: 24px;
+  vertical-align: super;
+  margin-left: 4px;
 }
 
 .text-section p {
-    font-weight: lighter;
-    font-size: 2rem;
-    color: #474747;
-    margin-left: 280px;
-}
-
-.text-section sup{
-    font-size: 1.5rem;
+  font-size: 48px;
+  color: #474747;
+  font-weight: 300;
 }
 
 .image-section {
-    position: relative;
-    margin-left: 200px;
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.image-section img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 
 .footer {
@@ -637,14 +656,14 @@ sup {
         justify-content: flex-start;
         align-items: center;
     }
-    .crushdebt .text-section {
-        font-size: 24px;
+    .crushdebt .text-section h1{
+        font-size: 47px;
         font-weight: bold;
         margin-bottom: 5px;
         margin-top: 20px;
     }
     .crushdebt .text-section p {
-        font-size: 20px;
+        font-size: 34px;
         line-height: 1.5;
     }
     .crushdebt .image-section img {
@@ -771,15 +790,15 @@ sup {
         align-items: center;
     }
 
-    .crushdebt .text-section {
-        font-size: 24px;
+    .crushdebt .text-section h1 {
+        font-size: 44px;
         font-weight: bold;
         margin-bottom: 5px;
         margin-top: 20px;
     }
 
     .crushdebt .text-section p {
-        font-size: 14px;
+        font-size: 30px;
         line-height: 1.5;
     }
 
